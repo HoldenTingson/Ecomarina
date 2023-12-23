@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Ecomarina" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorControlActivated">@android:color/transparent</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="fontFamily">@font/outfit</item>
+    </style>
+
+    <style name="Theme.Ecomarina" parent="Base.Theme.Ecomarina" />
+</resources>

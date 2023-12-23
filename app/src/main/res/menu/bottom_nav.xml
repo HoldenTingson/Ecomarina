@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Beranda"
+        android:id="@+id/beranda"
+        android:icon="@drawable/baseline_home_24"/>
+    <item android:title="Peringkat"
+        android:id="@+id/peringkat"
+        android:icon="@drawable/baseline_leaderboard_24"/>
+    <item android:title="Laporan"
+        android:id="@+id/laporan"
+        android:icon="@drawable/baseline_event_note_24"/>
+    <item android:title="Profil"
+        android:id="@+id/profil"
+        android:icon="@drawable/baseline_person_24"/>
+</menu>
