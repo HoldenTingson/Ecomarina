@@ -27,7 +27,7 @@
         android:layout_below="@id/gambar"
         android:text="Selamat Datang"
         android:textStyle="bold"
-        android:textSize="20dp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/txt_eco"
@@ -37,7 +37,7 @@
         android:layout_below="@id/txt_welcome"
         android:text="di Aplikasi ECOMARINA"
         android:textStyle="bold"
-        android:textSize="20dp" />
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/txt_marina"
@@ -48,6 +48,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="100dp"
         android:textStyle="normal"
+        android:textSize="14sp"
         android:text='"Ayo, Bersama Lestarikan Laut Kita!"' />
 
     <Button
@@ -59,6 +60,7 @@
         android:layout_centerHorizontal="true"
         android:width="340dp"
         android:height="20dp"
+        android:textSize="14sp"
         android:backgroundTint="@color/blue"
         android:text="Selanjutnya" />
 

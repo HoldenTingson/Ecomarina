@@ -1,16 +1,477 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".Beranda">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:layout_gravity="center"
-        android:text="Beranda" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="170dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="130dp"
+          android:background="@color/blue">
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:layout_marginStart="25dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="ECOMARINA"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
 
-</FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="Halo, Holden"
+                android:textColor="@color/white"/>
+         </LinearLayout>
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="25dp"
+             android:layout_width="62dp"
+             android:layout_height="62dp"
+             android:id="@+id/image_profile"
+             android:src="@drawable/profile"/>
+      </LinearLayout>
+      <androidx.cardview.widget.CardView
+          android:id="@+id/ip_foto"
+          android:layout_width="340dp"
+          android:layout_height="75dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="93dp"
+          app:cardBackgroundColor="@color/white"
+          app:cardElevation="3dp"
+          app:cardCornerRadius="15dp">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+               android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+               android:layout_gravity="center">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/border_background">
+                  <ImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:src="@drawable/waste"
+                      android:layout_marginStart="13dp"
+                      android:layout_gravity="center"/>
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center"
+                      android:layout_height="wrap_content">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Total Limbah"
+                      android:layout_marginStart="5dp"
+                      android:textSize="12sp"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="2 Limbah"
+                      android:textStyle="bold"
+                      android:layout_marginStart="5dp"
+                      android:textSize="16sp"/>
+                  </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/border_background">
+                  <ImageView
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                     android:src="@drawable/history"
+                      android:layout_marginStart="5dp"
+                      android:layout_gravity="center"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                     android:text="Riwayat Laporan"
+                      android:layout_marginStart="5dp"
+                      android:layout_gravity="center"
+                     android:textSize="12sp"/>
+
+            </LinearLayout>
+            </LinearLayout>
+         </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+   </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="340dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="left"
+       android:layout_marginStart="35dp"
+       android:layout_marginTop="30dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:textColor="@color/black"
+             android:text="Prediksi Kualitas Air"
+            android:textSize="20sp"/>
+         <Button
+             android:id="@+id/hasil"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="20dp"
+             android:width="120dp"
+             android:height="35dp"
+             android:textSize="16sp"
+             android:backgroundTint="@color/green"
+             android:text="BAIK" />
+      </LinearLayout>
+   </LinearLayout>
+   
+   <androidx.cardview.widget.CardView
+       android:layout_marginTop="20dp"
+       android:layout_width="340dp"
+       android:layout_gravity="center"
+       app:cardCornerRadius="15dp"
+       android:layout_height="420dp">
+
+      <LinearLayout
+          android:layout_width="145dp"
+          android:layout_height="65dp"
+          android:orientation="vertical"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="15dp">
+
+      <TextView
+          android:id="@+id/ph"
+          android:layout_marginStart="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Level pH"
+          android:textStyle="normal"
+          android:textSize="14sp" />
+
+      <EditText
+          android:id="@+id/ip_ph"
+          android:layout_marginTop="10dp"
+          android:layout_marginStart="5dp"
+          android:paddingLeft="20dp"
+          android:layout_width="140dp"
+          android:layout_height="35dp"
+          android:backgroundTint="@color/white"
+          android:inputType="text"
+          android:background="@drawable/edit_text_rounded_corner"
+          android:elevation="3dp"
+          android:textColor="@color/grey"
+          android:textSize="14sp"
+          app:strokeColor="@color/grey"
+          app:strokeWidth="1dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="310dp"
+          android:layout_height="65dp"
+          android:orientation="vertical"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="15dp">
+
+         <TextView
+             android:id="@+id/solid"
+             android:layout_marginStart="165dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Solid"
+             android:textStyle="normal"
+             android:textSize="14sp" />
+
+         <EditText
+             android:id="@+id/ip_solid"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="165dp"
+             android:layout_width="140dp"
+             android:layout_height="35dp"
+             android:backgroundTint="@color/white"
+             android:inputType="text"
+             android:background="@drawable/edit_text_rounded_corner"
+             android:elevation="3dp"
+             android:paddingLeft="20dp"
+             android:textColor="@color/grey"
+             android:textSize="14sp"
+             app:strokeColor="@color/grey"
+             app:strokeWidth="1dp" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="145dp"
+          android:layout_height="65dp"
+          android:orientation="vertical"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="100dp">
+
+         <TextView
+             android:id="@+id/turbiditas"
+             android:layout_marginStart="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Turbiditas"
+             android:textStyle="normal"
+             android:textSize="14sp" />
+
+         <EditText
+             android:id="@+id/ip_turbiditas"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="5dp"
+             android:layout_width="140dp"
+             android:layout_height="35dp"
+             android:backgroundTint="@color/white"
+             android:paddingLeft="20dp"
+             android:inputType="text"
+             android:background="@drawable/edit_text_rounded_corner"
+             android:elevation="3dp"
+             android:textColor="@color/grey"
+             android:textSize="14sp"
+             app:strokeColor="@color/grey"
+             app:strokeWidth="1dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="310dp"
+          android:layout_height="65dp"
+          android:orientation="vertical"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="100dp">
+
+         <TextView
+             android:id="@+id/sulfat"
+             android:layout_marginStart="165dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Sulfat"
+             android:textStyle="normal"
+             android:textSize="14sp" />
+
+         <EditText
+             android:id="@+id/ip_sulfat"
+             android:paddingLeft="20dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="165dp"
+             android:layout_width="140dp"
+             android:layout_height="35dp"
+             android:backgroundTint="@color/white"
+             android:inputType="text"
+             android:background="@drawable/edit_text_rounded_corner"
+             android:elevation="3dp"
+             android:textColor="@color/grey"
+             android:textSize="14sp"
+             app:strokeColor="@color/grey"
+             app:strokeWidth="1dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="145dp"
+          android:layout_height="65dp"
+          android:orientation="vertical"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="180dp">
+
+         <TextView
+             android:id="@+id/konduktivitas"
+             android:layout_marginStart="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Konduktivitas"
+             android:textStyle="normal"
+             android:textSize="14sp" />
+
+         <EditText
+             android:id="@+id/ip_konduktivitas"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="5dp"
+             android:layout_width="140dp"
+             android:paddingLeft="20dp"
+             android:layout_height="35dp"
+             android:backgroundTint="@color/white"
+             android:inputType="text"
+             android:background="@drawable/edit_text_rounded_corner"
+             android:elevation="3dp"
+             android:textColor="@color/grey"
+             android:textSize="14sp"
+             app:strokeColor="@color/grey"
+             app:strokeWidth="1dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="310dp"
+          android:layout_height="65dp"
+          android:orientation="vertical"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="180dp">
+
+         <TextView
+             android:id="@+id/trihalometana"
+             android:layout_marginStart="165dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Trihalometana"
+             android:textStyle="normal"
+             android:textSize="14sp" />
+
+         <EditText
+             android:id="@+id/ip_trihalometana"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="165dp"
+             android:paddingLeft="20dp"
+             android:layout_width="140dp"
+             android:layout_height="35dp"
+             android:backgroundTint="@color/white"
+             android:inputType="text"
+             android:background="@drawable/edit_text_rounded_corner"
+             android:elevation="3dp"
+             android:textColor="@color/grey"
+             android:textSize="14sp"
+             app:strokeColor="@color/grey"
+             app:strokeWidth="1dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="145dp"
+          android:layout_height="65dp"
+          android:orientation="vertical"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="260dp">
+
+         <TextView
+             android:id="@+id/kloramina"
+             android:layout_marginStart="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Kloramina"
+             android:textStyle="normal"
+             android:textSize="14sp" />
+
+         <EditText
+             android:id="@+id/ip_kloramina"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="5dp"
+             android:layout_width="140dp"
+             android:paddingLeft="20dp"
+             android:layout_height="35dp"
+             android:backgroundTint="@color/white"
+             android:inputType="text"
+             android:background="@drawable/edit_text_rounded_corner"
+             android:elevation="3dp"
+             android:textColor="@color/grey"
+             android:textSize="14sp"
+             app:strokeColor="@color/grey"
+             app:strokeWidth="1dp" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="310dp"
+          android:layout_height="65dp"
+          android:orientation="vertical"
+          android:layout_marginStart="15dp"
+          android:layout_marginTop="260dp">
+
+         <TextView
+             android:id="@+id/karbon"
+             android:layout_marginStart="165dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Karbon Organik"
+             android:textStyle="normal"
+             android:textSize="14sp" />
+
+         <EditText
+             android:id="@+id/ip_karbon"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="165dp"
+             android:paddingLeft="20dp"
+             android:layout_width="140dp"
+             android:layout_height="35dp"
+             android:backgroundTint="@color/white"
+             android:inputType="text"
+             android:background="@drawable/edit_text_rounded_corner"
+             android:elevation="3dp"
+             android:textColor="@color/grey"
+             android:textSize="14sp"
+             app:strokeColor="@color/grey"
+             app:strokeWidth="1dp" />
+      </LinearLayout>
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:width="140dp"
+          android:height="35dp"
+          android:id="@+id/ulang"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="350dp"
+          android:backgroundTint="@color/blue"
+          android:fontFamily="sans-serif"
+          android:text="ULANG"
+          android:textSize="14sp"
+          android:textColor="@color/white"
+          android:textStyle="normal" />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="180dp"
+          android:layout_marginTop="350dp"
+          android:width="140dp"
+          android:height="35dp"
+          android:id="@+id/prediksi"
+          android:layout_centerHorizontal="true"
+          android:backgroundTint="@color/blue"
+          android:fontFamily="sans-serif"
+          android:text="PREDIKSI"
+          android:textSize="14sp"
+          android:textColor="@color/white"
+          android:textStyle="normal" />
+
+   </androidx.cardview.widget.CardView>
+
+</LinearLayout>

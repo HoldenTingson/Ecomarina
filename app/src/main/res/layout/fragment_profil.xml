@@ -1,16 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Profil">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="26dp"
-        android:layout_gravity="center"
-        android:text="Profil" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/blue"
+            android:padding="20dp">
 
-</FrameLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="60dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/image_profile"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubah Gambar Profil"
+                android:layout_below="@id/image_profile"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profil"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dp"
+                android:text="Email"
+                android:textStyle="normal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ip_email"
+                android:layout_width="340dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:paddingLeft="20dp"
+                android:text="holden@gmail.com"
+                android:inputType="text"
+                android:background="@drawable/edit_text_rounded_corner"
+                android:elevation="3dp"
+                android:textSize="14sp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dp"
+                android:text="Username"
+                android:textStyle="normal"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/ip_username"
+                android:layout_width="340dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:paddingLeft="20dp"
+                android:text="Holden Tingson"
+                android:inputType="text"
+                android:background="@drawable/edit_text_rounded_corner"
+                android:elevation="3dp"
+                android:textSize="14sp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="1dp" />
+
+            <TextView
+                android:id="@+id/txt_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="25dp"
+                android:text="Password"
+                android:textStyle="normal"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-black"/>
+
+            <EditText
+                android:id="@+id/ip_password"
+                android:layout_width="340dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/white"
+                android:paddingLeft="20dp"
+                android:text="********"
+                android:inputType="text"
+                android:background="@drawable/edit_text_rounded_corner"
+                android:elevation="3dp"
+                android:textSize="14sp"
+                app:strokeColor="@color/grey"
+                app:strokeWidth="1dp" />
+
+            <Button
+                android:id="@+id/simpan"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:width="340dp"
+                android:height="20dp"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="sans-serif"
+                android:text="Simpan"
+                android:textColor="@color/white"
+                android:textColorHighlight="#673AB7"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:width="340dp"
+                android:height="20dp"
+                android:backgroundTint="@color/white"
+                android:text="Logout"
+                android:textColor="@color/blue"
+                android:textSize="14sp"
+                app:strokeColor="@color/blue"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

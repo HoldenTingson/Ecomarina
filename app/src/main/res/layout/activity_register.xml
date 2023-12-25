@@ -29,7 +29,7 @@
         android:layout_below="@id/gambar"
         android:text="Daftarkan Akunmu"
         android:textStyle="bold"
-        android:textSize="18dp" />
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/txt_email"
@@ -40,7 +40,7 @@
         android:layout_below="@id/txt_silahkan"
         android:text="Email"
         android:textStyle="normal"
-        android:textSize="12dp" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/ip_email"
@@ -56,7 +56,7 @@
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="3dp"
         android:textColor="@color/grey"
-        android:textSize="13dp"
+        android:textSize="14sp"
         app:strokeColor="@color/grey"
         app:strokeWidth="1dp" />
 
@@ -69,7 +69,7 @@
         android:layout_below="@id/ip_email"
         android:text="Username"
         android:textStyle="normal"
-        android:textSize="12dp" />
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/ip_username"
@@ -85,7 +85,7 @@
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="3dp"
         android:textColor="@color/grey"
-        android:textSize="13dp"
+        android:textSize="14sp"
         app:strokeColor="@color/grey"
         app:strokeWidth="1dp" />
 
@@ -98,7 +98,7 @@
         android:layout_below="@id/ip_username"
         android:text="Password"
         android:textStyle="normal"
-        android:textSize="12dp"
+        android:textSize="14sp"
         android:fontFamily="sans-serif-black"/>
 
     <EditText
@@ -115,7 +115,7 @@
         android:background="@drawable/edit_text_rounded_corner"
         android:elevation="3dp"
         android:textColor="@color/grey"
-        android:textSize="13dp"
+        android:textSize="14sp"
         app:strokeColor="@color/grey"
         app:strokeWidth="1dp" />
 
@@ -127,6 +127,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="40dp"
         android:layout_marginTop="20dp"
+        android:textSize="14sp"
         android:text="Sudah Punya Akun"
         android:textColor="@color/dgrey" />
 
@@ -141,8 +142,8 @@
         android:backgroundTint="@color/blue"
         android:fontFamily="sans-serif"
         android:text="Daftar"
+        android:textSize="14sp"
         android:textColor="@color/white"
-        android:textColorHighlight="#673AB7"
         android:textStyle="normal" />
 
 </RelativeLayout>

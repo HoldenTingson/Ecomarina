@@ -30,12 +30,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         replaceFragment(Beranda())
 
-        binding.bottomNavigationView.children.forEach {
-            (it as? ViewGroup)?.children?.forEach {
-                it.setOnLongClickListener { _ -> true }
-            }
-        }
-
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
 
